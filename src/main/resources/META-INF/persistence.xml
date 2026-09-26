@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="tamrin1PU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/><!--change the driver based on your DBMS-->
+            <property name="hibernate.connection.url" value="your_db_url"/>
+            <property name="hibernate.connection.username" value="your_db_username"/>
+            <property name="hibernate.connection.password" value="your_db_password"/>
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>-->
+
+<!--                        <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+
+<!--            <property name="hibernate.show_sql" value="true"/>-->
+<!--            <property name="hibernate.format_sql" value="true"/>-->
+        </properties>
+
+    </persistence-unit>
+</persistence>
